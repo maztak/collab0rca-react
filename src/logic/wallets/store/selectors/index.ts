@@ -27,7 +27,9 @@ export const shouldSwitchWalletChain = createSelector(
   providerSelector,
   currentChainId,
   ({ account, network }: ProvidersState, currentChainId: ChainId): boolean => {
-    return !!account && network !== currentChainId
+    // return !!account && network !== currentChainId
+    // FIXME Assign true temporarily to make it work
+    return true
   },
 )
 
