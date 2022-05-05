@@ -8,10 +8,11 @@ let chains: ChainInfo[] = []
 export const getChains = (): ChainInfo[] => chains
 
 export const loadChains = async () => {
-  const { results = [] } = await getChainsConfig(GATEWAY_URL)
-  chains = results
+  chains = [ emptyChainInfo ]
+  // const { results = [] } = await getChainsConfig(GATEWAY_URL)
+  // chains = results
   // Set the initail web3 provider after loading chains
-  setWeb3ReadOnly()
+  // setWeb3ReadOnly()
 }
 
 // An empty template is required because `getChain()` uses `find()` on load
