@@ -8,15 +8,40 @@ let chains: ChainInfo[] = []
 export const getChains = (): ChainInfo[] => chains
 
 export const loadChains = async () => {
-  chains = [ emptyChainInfo ]
-  // const { results = [] } = await getChainsConfig(GATEWAY_URL)
-  // chains = results
-  // Set the initail web3 provider after loading chains
-  // setWeb3ReadOnly()
+  chains = [ astarChainInfo ]
 }
 
 // An empty template is required because `getChain()` uses `find()` on load
 export const emptyChainInfo: ChainInfo = {
+  transactionService: '',
+  chainId: '',
+  chainName: '',
+  shortName: '',
+  l2: false,
+  description: '',
+  rpcUri: { authentication: '' as RPC_AUTHENTICATION, value: '' },
+  publicRpcUri: { authentication: '' as RPC_AUTHENTICATION, value: '' },
+  safeAppsRpcUri: { authentication: '' as RPC_AUTHENTICATION, value: '' },
+  blockExplorerUriTemplate: {
+    address: '',
+    txHash: '',
+    api: '',
+  },
+  nativeCurrency: {
+    name: '',
+    symbol: '',
+    decimals: 0,
+    logoUri: '',
+  },
+  theme: { textColor: '', backgroundColor: '' },
+  ensRegistryAddress: '',
+  gasPrice: [],
+  disabledWallets: [],
+  features: [],
+}
+
+// Network config for Astar Network
+const astarChainInfo: ChainInfo = {
   transactionService: '',
   chainId: '592',
   chainName: 'Astar Network Mainnet',
