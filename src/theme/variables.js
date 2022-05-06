@@ -1,32 +1,32 @@
-const border = '#e8e7e6'
-const connectedColor = '#008C73'
-const disabled = '#5D6D74'
-const errorColor = '#f02525'
-const fancyColor = '#f02525'
-const fontColor = '#001428'
+const border = '#303030'
+const connectedColor = '#17B7D8'
+const disabled = '#777777'
+const errorColor = '#FF2A55'
+const fancyColor = '#FF2A55'
+const fontColor = '#777777'
 const headerHeight = '52px'
 const lg = '24px'
 const marginButtonImg = '12px'
 const md = '16px'
-const primary = '#001428'
-const primaryLite = '#EFFAF8'
-const primaryActive = '#008C73'
-const secondary = '#008C73'
-const secondaryTextOrSvg = '#B2B5B2'
-const secondaryBackground = '#f0efee'
+const primary = '#17B7D8'
+const primaryLite = '#FFFFFF'
+const primaryActive = '#17B7D8'
+const secondary = '#4ADE80'
+const secondaryTextOrSvg = '#303030'
+const secondaryBackground = '#777777'
 const sm = '8px'
-const warningColor = '#ffc05f'
-const alertWarningColor = '#FBE5C5'
+const warningColor = '#FF2A55'
+const alertWarningColor = '#FF2A55'
 const xl = '32px'
 const xs = '4px'
 const xxl = '40px'
 
 module.exports = {
-  background: '#F6F7F8',
-  black300: '#B2BBC0',
-  black400: '#566976',
-  black500: '#162D45',
-  black600: '#111B22',
+  background: '#181818',
+  black300: '#181818',
+  black400: '#181818',
+  black500: '#181818',
+  black600: '#181818',
   boldFont: 700,
   bolderFont: 500,
   border,
@@ -43,13 +43,13 @@ module.exports = {
   fontSizeHeadingMd: 20,
   fontSizeHeadingSm: 16,
   fontSizeHeadingXs: 13,
-  grey400: '#EEEFF0',
-  gray500: '#E2E3E3',
+  grey400: '#777777',
+  gray500: '#777777',
   headerHeight,
   largeFontSize: '16px',
   lg,
   lightFont: 300,
-  mainFontFamily: 'Averta, sans-serif',
+  mainFontFamily: 'poppins, sans-serif',
   marginButtonImg,
   md,
   mediumFontSize: '14px',
@@ -70,7 +70,7 @@ module.exports = {
   screenXs: 480,
   screenXsMax: 767,
   secondary,
-  secondaryFontFamily: 'Averta, monospace',
+  secondaryFontFamily: 'poppins, monospace',
   secondaryText: secondaryTextOrSvg,
   secondaryBackground,
   sm,
