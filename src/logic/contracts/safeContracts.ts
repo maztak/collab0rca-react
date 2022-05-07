@@ -271,7 +271,6 @@ export const estimateGasForDeployingSafe = async (
 
 export const getGnosisSafeInstanceAt = (safeAddress: string, safeVersion: string): GnosisSafe => {
   const safeSingletonDeployment = getSafeContractDeployment({ safeVersion })
-  console.log("SAFE SINGLETON DEPLOYMENT: ", safeSingletonDeployment)
 
   const web3 = getWeb3()
   return new web3.eth.Contract(safeSingletonDeployment?.abi as AbiItem[], safeAddress) as unknown as GnosisSafe
