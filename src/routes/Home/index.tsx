@@ -1,13 +1,24 @@
 import { ReactElement } from 'react'
 import Page from 'src/components/layout/Page'
-import { Box } from '@material-ui/core'
-import Dashboard from 'src/components/Dashboard'
+import PendingTxsList from 'src/components/Dashboard/PendingTxs/PendingTxsList'
+import Overview from 'src/components/Dashboard/Overview/Overview'
+import { Box, Grid } from '@material-ui/core'
 
 const Home = (): ReactElement => {
   return (
     <Page>
       <Box pb={3}>
-        <Dashboard />
+        <Grid container spacing={3}>
+          <Grid item xs={12} md={6}>
+            <Overview />
+          </Grid>
+
+          <Grid item xs={12} md={6} />
+
+          <Grid item xs={12} md={6}>
+            <PendingTxsList size={4} />
+          </Grid>
+        </Grid>
       </Box>
     </Page>
   )

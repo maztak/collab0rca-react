@@ -12,8 +12,8 @@ import Img from 'src/components/layout/Img'
 import Row from 'src/components/layout/Row'
 import { headerHeight, md, screenSm, sm } from 'src/theme/variables'
 import { useStateHandler } from 'src/logic/hooks/useStateHandler'
-import SafeLogo from '../assets/gnosis-safe-multisig-logo.svg'
-import { ROOT_ROUTE } from 'src/routes/routes'
+import SafeLogo from '../assets/collab0rca_logo.png'
+import { WELCOME_ROUTE } from 'src/routes/routes'
 import WalletSwitch from 'src/components/WalletSwitch'
 import Divider from 'src/components/layout/Divider'
 import { shouldSwitchWalletChain } from 'src/logic/wallets/store/selectors'
@@ -98,8 +98,8 @@ const Layout = ({ classes, providerDetails, providerInfo }) => {
     <Row className={classes.summary}>
       <Col className={classes.logo} middle="xs" start="xs">
         <Track {...OVERVIEW_EVENTS.HOME}>
-          <Link to={ROOT_ROUTE}>
-            <Img alt="Gnosis Safe" height={36} src={SafeLogo} testId="heading-gnosis-logo" id="safe-logo" />
+          <Link to={WELCOME_ROUTE}>
+            <Img alt="Collab0rca" height={36} src={SafeLogo} testId="heading-gnosis-logo" id="collab0rca-logo" />
           </Link>
         </Track>
       </Col>
