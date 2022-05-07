@@ -64,7 +64,6 @@ const getSafeContractDeployment = ({ safeVersion }: { safeVersion: string }) => 
  */
 const getGnosisSafeContractInstance = (web3: Web3, chainId: ChainId): GnosisSafe => {
   const safeSingletonDeployment = getSafeContractDeployment({ safeVersion: LATEST_SAFE_VERSION })
-  // console.log("SAFE SINGLETON DEPLOYMENT: ", safeSingletonDeployment)
   const contractAddress = '0xb4A7C7da1631CF60A2Cf23ABc86986f99a1A7f70' // NOTE GnosisSafe contract address on ASTAR
 
   if (!contractAddress) {
@@ -88,7 +87,6 @@ const getProxyFactoryContractInstance = (web3: Web3, chainId: ChainId): ProxyFac
     getProxyFactoryDeployment({
       version: LATEST_SAFE_VERSION,
     })
-    console.log("proxyFactoryDeploymenet", proxyFactoryDeployment)
   const contractAddress = '0xE89ce3bcD35bA068A9F9d906896D3d03Ad5C30EC'
 
   if (!contractAddress) {
