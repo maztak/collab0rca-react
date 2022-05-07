@@ -25,7 +25,7 @@ import { ModalHeader } from 'src/routes/safe/components/Balances/SendModal/scree
 import { TxModalWrapper } from 'src/routes/safe/components/Transactions/helpers/TxModalWrapper'
 import { TransferAmount } from 'src/routes/safe/components/Balances/SendModal/TransferAmount'
 import { getStepTitle } from 'src/routes/safe/components/Balances/SendModal/utils'
-import useSafeAddress from 'src/logic/currentSession/hooks/useSafeAddress'
+import useSafeAddress from 'src/logic/currentSession/hooks/useSafeAddresses'
 
 const useStyles = makeStyles(styles)
 

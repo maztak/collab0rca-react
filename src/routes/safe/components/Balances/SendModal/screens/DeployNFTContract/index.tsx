@@ -19,7 +19,7 @@ import { TransactionReviewType } from './Review'
 import { NativeCoinValue } from './NativeCoinValue'
 import { ModalHeader } from '../ModalHeader'
 import { getStepTitle } from 'src/routes/safe/components/Balances/SendModal/utils'
-import useSafeAddress from 'src/logic/currentSession/hooks/useSafeAddress'
+import useSafeAddress from 'src/logic/currentSession/hooks/useSafeAddresses'
 
 const useStyles = makeStyles(styles)
 
